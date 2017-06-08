@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					"public/css/frameri.css" : "public/css/scss/frameri.scss"
+					"public/css/styles.css" : "public/css/scss/styles.scss"
 				}
 			}
 		}
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('local', ['watch:sass']);			// Run this task locally
 	grunt.registerTask('scuba', ['sass:dist']);			// This runs on scuba
 	grunt.registerTask('production', ['sass:dist']);			// This runs on prod
-	
+
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 };
