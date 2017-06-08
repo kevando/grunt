@@ -17,7 +17,9 @@ Then click yes. Takes a few minutes to download and you're good to go. You now h
 ## Install node.js with npm
 We can install this a few ways, but homebrew is by far the easiest. Here is the command to install homebrew.
 
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 It will prompt you a few times and then take a few minutes to download. Now you have homebrew! Use it to install node
 
@@ -39,7 +41,8 @@ git clone https://github.com/kevando/grunt.git
 ```
 
 ## Start your local server
-Navigate to your directory
+Navigate to your directory and run 
+
 ```
 npm install
 node app.js
@@ -47,23 +50,30 @@ node app.js
 
 The first command does runs through package.json and installs some dependancies. The second command starts your local webserver!
 
-Navige to `http://127.0.0.1` in your browser and you should see this
+Navige to `http://127.0.0.1` in your browser and you should see this"
 
-## Configure Grunt
+![Screenshot](https://i.imgur.com/lSQolfd.png.png =50)
+
+
+## Grunt
 Install it 
+
 ```
 npm install -g grunt-cli
 ```
 
--g means to install this npm package globally
+-g means to install this npm package globally, now run it:
 
-## Run Grunt
 
 ```
 grunt local
 ```
 
+I will get into the configuration later, but this takes styles.scss and compiles it into a css file that you can use. Now refresh your web server and you should see the beautiful styling applied :)
+
+![ss](https://i.imgur.com/f9M0gkm.png)
+
+
 # Conclusion
 This repo works well for an express boilerplate also.
-I listened to radical face while writing this.
 
