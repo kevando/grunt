@@ -1,0 +1,21 @@
+body {background-color:red !important}
+
+// Button group
+.button-group {
+	$color: $primary-color;
+	font-size: 0;
+
+	& > li {
+		margin: 0;
+
+		width: 80%;
+
+		&:first-child {
+			margin-left: 0;
+
+			.shop-button {
+
+			}
+		}
+	}
+}
